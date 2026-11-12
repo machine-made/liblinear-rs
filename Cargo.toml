@@ -6,7 +6,11 @@ edition = "2024"
 rust-version = "1.99.1"
 publish = false
 license = "BSD-3-Clause"
-description = "A pure Rust port of LIBLINEAR"
+description = "A pure Rust port of LIBLINEAR: linear SVM, logistic regression, support vector regression and one-class SVM"
+repository = "https://github.com/machine-made/liblinear-rs"
+readme = "README.md"
+keywords = ["liblinear", "svm", "logistic-regression", "machine-learning", "classification"]
+categories = ["algorithms", "science"]
 # Parity checks that call crate-private hooks are modules of the library.
 autotests = false
 
