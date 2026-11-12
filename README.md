@@ -1,199 +1,159 @@
 # liblinear-rs
 
-A pure Rust port of LIBLINEAR is in progress. The crate has typed inputs and
-outputs, a case file reader, and a [contract for all 12 solvers](CONTRACT.md).
-Solvers 0 through 7 can train and predict classification models. Solvers
-11, 12 and 13 can train and predict support vector regression models.
-Solver 21 can train and predict one-class models. All 12 solvers are supported.
+[![CI](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml)
+[![Licence: BSD-3-Clause](https://img.shields.io/badge/licence-BSD--3--Clause-blue.svg)](LICENSE)
 
-The reference uses unchanged LIBLINEAR 2.50 source and its BLAS files.
-It covers all 12 solvers with 158 input cases. Each case has saved results
-from g++ 13.3.0 at `-O0` and `-O2`. The measured spread is zero. The
-[comparison rules](reference/tolerances.json) require exact values for all
-output fields. A rule changes only with a new measurement.
+A pure Rust port of [LIBLINEAR](https://www.csie.ntu.edu.tw/~cjlin/liblinear/)
+2.50, the library for linear classification, regression and one-class
+detection on large sparse data. There is no C code, no unsafe code and no
+optional feature.
 
-## Train and check the ported solvers
+The port follows the original algorithm and its floating-point operation
+order. On 158 saved test cases, every output field matches the original C
+program bit for bit.
 
-Use the stable Rust toolchain. The crate uses edition 2024 and forbids unsafe
-code. Typed errors use `thiserror`. The parity report test uses `sha256sum`.
-Tests use `serde_json` with float round trips to keep the saved double bits.
+> **Status.** Version 0.0.1. All 12 solvers train and predict. The crate is
+> not on crates.io yet, and its API can still change. The checks below cover
+> the saved cases only; they do not prove a match on every input.
 
-```sh
-cargo fmt --all -- --check
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo clippy --locked --all-targets --all-features -- -D warnings
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo nextest run --locked --all-features
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo test --locked --doc --all-features
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo nextest run --locked --no-default-features
-cargo deny check
-RUSTDOCFLAGS="-D warnings" cargo doc --locked --no-deps --all-features
+## What it solves
+
+| Solver | Name in LIBLINEAR | Task |
+| --- | --- | --- |
+| 0 | `L2R_LR` | Logistic regression, L2 penalty, primal |
+| 7 | `L2R_LR_DUAL` | Logistic regression, L2 penalty, dual |
+| 6 | `L1R_LR` | Logistic regression, L1 penalty |
+| 2 | `L2R_L2LOSS_SVC` | Support vector classification, L2 loss, primal |
+| 1 | `L2R_L2LOSS_SVC_DUAL` | Support vector classification, L2 loss, dual |
+| 3 | `L2R_L1LOSS_SVC_DUAL` | Support vector classification, L1 loss, dual |
+| 5 | `L1R_L2LOSS_SVC` | Support vector classification, L1 penalty |
+| 4 | `MCSVM_CS` | Multiclass support vector classification (Crammer and Singer) |
+| 11 | `L2R_L2LOSS_SVR` | Support vector regression, L2 loss, primal |
+| 12 | `L2R_L2LOSS_SVR_DUAL` | Support vector regression, L2 loss, dual |
+| 13 | `L2R_L1LOSS_SVR_DUAL` | Support vector regression, L1 loss, dual |
+| 21 | `ONECLASS_SVM` | One-class support vector machine |
+
+Solvers 0 to 7 handle two or more classes. The solver numbers are those of
+LIBLINEAR, so a parameter file for the C library keeps its meaning.
+
+## Use it
+
+Until the crate is published, depend on it from Git:
+
+```toml
+[dependencies]
+liblinear = { git = "https://github.com/machine-made/liblinear-rs" }
 ```
 
-The tests parse all 158 cases, check their header counts, load all 316 saved
-results, and require equal results for both builds. Each output field must
-have a tolerance and a reason. Other tests check input errors and one-row
-cases. Solver 2 is compared by bits with all 15 frozen O2 cases. The report
-is [reference/parity/solver2.json](reference/parity/solver2.json). Tests also
-check two extra C reference cases, initial weights and prediction ties.
-CI runs these commands on pull requests and manual runs.
+Train on rows in memory, then predict:
 
-Heavy checks run by hand. They fuzz the case reader, training and prediction. They prove the weight index bounds, the random stream indices and one feature index rule. They run Miri on the determinism test and on the random and BLAS tests. They mutate the solvers. These checks do not run on every change.
+```rust
+use liblinear::{Feature, Parameter, Problem, SolverType, train};
 
-```rust,no_run
-use liblinear::{read_problem, train};
-
-let problem = read_problem("reference/corpus/s02_one_row.txt")?;
-let model = train(&problem, &problem.parameter)?;
+let parameter = Parameter {
+    solver_type: SolverType::L2rL2lossSvc,
+    eps: 0.1,
+    c: 1.0,
+    class_weights: Vec::new(),
+    p: 0.1,
+    nu: 0.5,
+    init_sol: None,
+    regularize_bias: true,
+    w_recalc: false,
+};
+let problem = Problem {
+    solvers: vec![SolverType::L2rL2lossSvc],
+    parameter: parameter.clone(),
+    nr_feature: 1,
+    bias: -1.0,
+    labels: vec![1.0],
+    rows: vec![vec![Feature { index: 1, value: 1.0 }]],
+};
+let model = train(&problem, &parameter)?;
 let predictions = model.predict(&problem)?;
 assert_eq!(predictions.len(), 1);
 # Ok::<(), liblinear::Error>(())
 ```
 
-`Problem` keeps the solver list and common parameters from the case header.
-Sparse row indices start at 1. Rows include the bias feature when bias is
-nonnegative. Vector lengths replace the C end markers. `Model` holds the
-model fields and the decision values and predictions for the input rows.
-See the contract for units, shapes, error rules and the train call.
+`read_problem` loads a case file in the format of the reference cases
+(see [reference/README.md](reference/README.md)).
 
-The frozen 2.50 source uses line-search Newton with preconditioned CG.
-`src/tron.rs` keeps that algorithm and the C BLAS operation order. The source
-map and the older TRON name in the original task notes are explained in the contract.
+Things to know:
 
-Solver 2: 15 of 15 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. Cases include C of 1e-6 and 1e6, eps of 1e-1 and 1e-8, bias on,
-off and free, class weights, a zero feature, a copied row, one row and the
-analytic weight `4000/4001`. This is a corpus result, with no speed claim.
+- Feature indices start at 1 and increase within each row.
+- Set `bias` to a nonnegative number to add a bias feature to each row.
+- `train` borrows its inputs and returns an owned `Model`. It does not print.
+  Each call starts the random stream at seed 1, as the C library does.
+- `Model` holds the weights, `rho` for one-class models, the labels, and the
+  decision values and predictions for the training rows. `Model::predict` and
+  `Model::decision_values` score another `Problem`.
+- `Error` names the failed check and the correction.
+- Results are the same on every run and every thread count on one CPU type.
+  The crate uses no threads.
 
-Solver 1: 14 of 14 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. Solver 3: 13 of 13 cases equal, worst relative error 0, worst
-0 ULP against bit equality. The reports are
-[solver1.json](reference/parity/solver1.json) and
-[solver3.json](reference/parity/solver3.json). Cases cover C of 1e-6 and 1e6,
-eps of 1e-1 and 1e-8, bias on and off, class weight 10, a zero feature,
-a copied row and one row. Solver 1 also covers the analytic weight and its
-Newton fallback. Extra C cases check multiclass fits and weight rebuilds.
+[CONTRACT.md](CONTRACT.md) lists the units, shapes, error rules and the
+source map for every solver.
 
-Solver 0: 14 of 14 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. Solver 7: 13 of 13 cases equal, worst relative error 0, worst
-0 ULP against bit equality. The reports are
-[solver0.json](reference/parity/solver0.json) and
-[solver7.json](reference/parity/solver7.json). Cases cover C of 1e-6 and
-1e6, eps of 1e-1 and 1e-8, class weight 10, bias on and off, zero features,
-copied rows and one row. Extra C cases check multiclass fits, initial
-weights, free bias and the solver 7 Newton fallback.
+## How the match is checked
 
-The libm table matches 2000 of 2000 exp and 2000 of 2000 log outputs by
-bits on glibc 2.39. The test prints the runner's C library version. The C
-source, build command and output hash are in `tests/fixtures/`. Another
-platform must pass this table test before claiming the same parity.
-A changed logarithm fails the model comparison for both solvers. Run the
-ignored check alone to see the failure; exit 101 is expected.
+1. **Frozen reference.** `vendor/liblinear/` holds the unchanged LIBLINEAR 2.50
+   source and its BLAS files. `reference/` holds 158 input cases, covering all
+   12 solvers, and the results of the C program for each case, built with
+   g++ 13.3.0 at `-O0` and `-O2`. The two builds agree exactly.
+2. **Exact comparison.** The tests require equal floating-point bits for every
+   output field: weights, decision values, predictions, labels and `rho`.
+   [reference/tolerances.json](reference/tolerances.json) states the rule for
+   each field.
+3. **Edge cases.** Cases cover `C` from 1e-6 to 1e6, `eps` from 1e-1 to 1e-8,
+   class weights, bias on, off and free, zero columns, copied rows, one-row
+   problems, and the iteration-limit exits.
+4. **Mutation checks.** A changed log, sum order, random generator, sort,
+   shrinking rule or threshold must fail the comparison. Each has an ignored
+   test that shows the failure.
 
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver07 different_logarithm_matches_reference -- --ignored --exact
-```
+Per-solver counts and the commands to reproduce them are in
+[docs/PARITY.md](docs/PARITY.md).
 
-The safe glibc random stream matches all 10000 C table outputs for each of
-seeds 1 and 2. Each train call starts seed 1 and shares the stream across
-class fits. A changed generator fails the model comparison. Run its ignored
-check alone to see the failure; exit 101 is expected.
+### What is not proven
 
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver13 different_generator_matches_reference -- --ignored --exact
-```
+- Bit equality holds on the saved cases. It does not prove other inputs.
+- The `exp` and `log` tables match glibc 2.39. Another C library needs the same
+  table test before claiming the same result.
+- Nonfinite inputs have no solver result. A `nu` of 1 has no finite one-class
+  result.
+- The crate makes no speed claim.
 
-BLAS (`daxpy`, `ddot`, `dnrm2`, `dscal`): all nine finite table cases are bit
-equal, worst relative error 0, worst 0 ULP. Two extra table cases check
-nonfinite values by class for NaN and by bits for other values. Build commands
-and the table hash are in [tests/fixtures/README.md](tests/fixtures/README.md).
+## Build and test
 
-The normal test run checks that a reversed dot sum is rejected. To show the
-same comparison as a failing command, run this check alone. Exit 101 is expected.
+Use the stable Rust toolchain. Edition 2024.
 
 ```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver2 reversed_sum_matches_reference -- --ignored --exact
+cargo fmt --all -- --check
+cargo clippy --locked --all-targets --all-features -- -D warnings
+cargo nextest run --locked --all-features
+cargo test --locked --doc --all-features
+cargo deny check
 ```
 
-Solver 5: 14 of 14 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. Solver 6: 14 of 14 cases equal, worst relative error 0, worst
-0 ULP against bit equality. Reports are [solver5.json](reference/parity/solver5.json)
-and [solver6.json](reference/parity/solver6.json). Cases cover C of 1e-6 and
-1e6, eps of 1e-1 and 1e-8, class weights, bias on, off and free, zero columns,
-copied rows and one row. Six extra C problems match both solvers by bits.
-They cover both 20-step line-search exits; see the contract for branch counts.
-A changed shrinking comparison fails parity for both solvers. Run the ignored
-check alone to show the failure; exit 101 is expected.
-
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver56 changed_shrinking_matches_reference -- --ignored --exact
-```
-
-Solver 4: 14 of 14 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. The report is [solver4.json](reference/parity/solver4.json).
-Cases cover two and three classes, C of 1e-6 and 1e6, eps of 1e-1 and 1e-8,
-class weights, bias on and off, zero features, copied rows and one row.
-Six extra multiclass C problems match every field by bits. They cover up
-to five classes, unbalanced counts, a singleton class, a zero column, copied
-rows, C of 1e-3 and 1e3, and the iteration-limit exit. The C qsort table
-matches all 10000 seeded double arrays by bits, including ties and signed
-zeros. See the contract for branch counts and the fixture build record.
-The changed-sort check fails parity. Run the ignored check alone to show
-the failure; exit 101 is expected.
-
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver4 changed_sort_matches_reference -- --ignored --exact
-```
-
-Solver 11: 13 of 13 cases equal, worst relative error 0, worst 0 ULP against
-bit equality. Solvers 12 and 13: each has 12 of 12 cases equal, worst
-relative error 0, worst 0 ULP against bit equality. Reports are
-[solver11.json](reference/parity/solver11.json),
-[solver12.json](reference/parity/solver12.json) and
-[solver13.json](reference/parity/solver13.json). Cases cover C of 1e-6 and
-1e6, eps of 1e-1 and 1e-8, bias on and off, zero features, copied rows,
-one row and solver 11 free bias. Six extra C problems match all three
-solvers by bits. They cover equal targets, one outlier, p zero and 100,
-a copied row, a zero column, and C of 1e-3 and 1e3. The large-C case reaches
-both dual iteration limits. The contract gives the branch counts.
-A changed dual epsilon threshold fails parity for both solvers 12 and 13.
-Run the ignored check alone to show the failure; exit 101 is expected.
-
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver11_13 changed_epsilon_threshold_matches_reference -- --ignored --exact
-```
-
-Solver 21 matches all 11 frozen cases and six extra C problems by bits,
-including rho, with worst 0 ULP against the exact-bit rule. The report is
-[solver21.json](reference/parity/solver21.json). Extra problems cover nu
-0.01, 0.5 and 0.99, equal and copied rows, a zero column, one row and
-features scaled by 1e3. The scaled case reaches 1000 steps. The contract
-records the shrinking, iteration-limit and rho branch counts. A changed
-rho update fails parity. Run its ignored test alone; exit 101 is expected.
-
-```sh
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver21 changed_rho_matches_reference -- --ignored --exact
-```
-
-## Check the reference
-
-Use Python 3.12, Bash and g++ 13.3.0. The scripts need no Python packages
-or network.
+To check the saved reference against its source, use Python 3.12, Bash and
+g++ 13.3.0. No Python package and no network are needed:
 
 ```sh
 python3 scripts/check_reference.py
 python3 scripts/check_reference.py --self-test
 ```
 
-The check reads the SHA-256 manifest, checks the source copies, makes the
-input cases again and compares both builds. It builds the `-O2` driver and
-runs each case twice. Both runs must match the saved `-O2` file byte for byte.
-The analytic case checks solvers 1 and 2 against `4000/4001` with an absolute
-limit of `1e-4`.
+`bash scripts/freeze_reference.sh` replaces the saved reference files. See
+[reference/BUILD.md](reference/BUILD.md) for the build record and
+[vendor/liblinear/PROVENANCE.md](vendor/liblinear/PROVENANCE.md) for the
+source record. Fuzzing, proofs, Miri and mutation runs are started by hand
+(workflow `heavy.yml`); see "Hand-run checks" in [CONTRACT.md](CONTRACT.md).
 
-`bash scripts/freeze_reference.sh` replaces the saved reference files.
-See [the build record](reference/BUILD.md),
-[the source record](vendor/liblinear/PROVENANCE.md),
-[the case format](reference/README.md), and
-[the measured spread](reference/spread.json).
+## Contributing and security
+
+Send changes as pull requests; [CONTRIBUTING.md](CONTRIBUTING.md) lists the
+gates. Report a vulnerability privately, as described in
+[SECURITY.md](SECURITY.md).
 
 ## Licence
 
