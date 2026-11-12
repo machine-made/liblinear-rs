@@ -1,0 +1,48 @@
+liblinear-rs
+
+Copyright (c) 2026 Ricardo Frantz
+Contact: https://github.com/machine-made/liblinear-rs/security/advisories/new (security reports; issues are disabled)
+Project home: https://github.com/machine-made/liblinear-rs
+
+------------------------------------------------------------------------
+Provenance
+------------------------------------------------------------------------
+
+liblinear-rs is a Rust port and reimplementation of LIBLINEAR, a library
+for large linear classification and regression, originally created and
+maintained by the LIBLINEAR Project:
+
+    R.-E. Fan, K.-W. Chang, C.-J. Hsieh, X.-R. Wang and C.-J. Lin
+    Department of Computer Science, National Taiwan University
+    https://www.csie.ntu.edu.tw/~cjlin/liblinear
+
+    LIBLINEAR: A Library for Large Linear Classification.
+    Journal of Machine Learning Research 9 (2008), 1871-1874.
+
+The Rust implementation targets numerical equivalence with upstream
+LIBLINEAR, shown by the parity checks in this repository; it is not a
+bitwise-identical copy.
+
+The solvers, input shapes and reference behavior derive from LIBLINEAR,
+which is distributed under the BSD 3-Clause License. The original
+copyright of The LIBLINEAR Project is retained and is not superseded by
+the Rust port's copyright.
+
+------------------------------------------------------------------------
+Vendored upstream
+------------------------------------------------------------------------
+
+This repository redistributes the original LIBLINEAR source verbatim under
+vendor/liblinear/ for differential testing and reference purposes:
+
+    Upstream: https://github.com/cjlin1/liblinear
+    Version:  2.50 (tag v250)
+    Commit:   491c9f1188b97ba70847c70a68be363d186ddf9d
+
+The upstream BSD 3-Clause license text is retained verbatim at
+vendor/liblinear/COPYRIGHT.
+
+------------------------------------------------------------------------
+
+Modifications and derivative works must preserve the applicable copyright,
+license, and notice text as required by the BSD 3-Clause License.

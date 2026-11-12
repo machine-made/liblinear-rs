@@ -1,0 +1,12 @@
+solvers 21
+C 1
+eps 1e-08
+bias -1
+p 0.1
+nu 0.5
+regularize_bias 1
+weights 0
+features 2
+rows 1
+data
+0.25 1:1 2:2

@@ -1,0 +1,60 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[package]
+name = "liblinear"
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.99.1"
+publish = false
+license = "BSD-3-Clause"
+description = "A pure Rust port of LIBLINEAR"
+# Parity checks that call crate-private hooks are modules of the library.
+autotests = false
+
+[dependencies]
+# Typed errors keep validation failures available to callers.
+thiserror = "2"
+
+[dev-dependencies]
+serde_json = { version = "1", features = ["float_roundtrip"] }
+# Time train and predict on one fixed problem.
+criterion = { version = "0.8", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "solvers"
+harness = false
+
+[[test]]
+name = "golden"
+path = "tests/golden.rs"
+
+[[test]]
+name = "problem"
+path = "tests/problem.rs"
+
+[[test]]
+name = "libm"
+path = "tests/libm.rs"
+
+[[test]]
+name = "determinism"
+path = "tests/determinism.rs"
+
+# The fuzz crate links the fuzzer runtime. Keep it out of this build.
+[workspace]
+exclude = ["fuzz"]
+
+[lints.rust]
+unsafe_code = "deny"
+missing_docs = "deny"
+# Proof harnesses use cfg(kani). Declare it so the stable build accepts the attribute.
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)', 'cfg(kani_slow)'] }
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+indexing_slicing = "deny"
+arithmetic_side_effects = "deny"
+float_cmp = "deny"

@@ -1,0 +1,265 @@
+{
+  "change_rule": "Change a tolerance only with a new measurement.",
+  "exact_float_rule": "Compare finite f64 values by their bits. Keep the sign of zero. Null values, array sizes and order must match.",
+  "fields": {
+    "runs": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].C": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].bias": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].decision_values": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].decision_values[]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].decision_values[][]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].eps": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].labels": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].labels[]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread is zero. Solver numbers, counts and class labels must be equal integers.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].nr_class": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread is zero. Solver numbers, counts and class labels must be equal integers.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].nr_feature": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread is zero. Solver numbers, counts and class labels must be equal integers.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].predictions": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].predictions[]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread is zero. Require exact predictions, including regression values, with equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].rho": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].solver": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread is zero. Solver numbers, counts and class labels must be equal integers.",
+      "measurement": "reference/spread.json"
+    },
+    "runs[].weights": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "Keep the same fields, null values, array sizes and order as the saved result."
+    },
+    "runs[].weights[]": {
+      "kind": "exact",
+      "value": 0,
+      "reason": "The measured absolute and relative spread between -O0 and -O2 is zero. Use the same operations in the same order and require equal bits.",
+      "measurement": "reference/spread.json"
+    }
+  },
+  "solver_fields": {
+    "0": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "1": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "2": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "3": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "4": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "5": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "6": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "7": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "11": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "12": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "13": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ],
+    "21": [
+      "solver",
+      "C",
+      "eps",
+      "bias",
+      "nr_class",
+      "nr_feature",
+      "rho",
+      "labels",
+      "weights",
+      "decision_values",
+      "predictions"
+    ]
+  }
+}

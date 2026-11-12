@@ -1,0 +1,6 @@
+{
+  "build_command": "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 gcc -std=c11 -O2 {repo}/tests/fixtures/mcsvm_sort.c -o {repo}/target/mcsvm-reference/sort_reference",
+  "run_command": "{repo}/target/mcsvm-reference/sort_reference > {repo}/tests/fixtures/mcsvm_sort.json",
+  "source_sha256": "e0579bfcb4b38a905c68c4c30b912014876f160c1ffb3729e8ba5ba450dc605e",
+  "output_sha256": "7e8134d715e151ba80e2fc05404be485e937c345f3e19266f44f99e9b594a14a"
+}

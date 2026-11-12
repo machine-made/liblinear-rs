@@ -1,0 +1,73 @@
+{
+  "source_sha256": "ceb3d69c6b747a96e67f53be89b6f66c539ee352fa34125d4ee197a47d2f8a76",
+  "coverage_source_sha256": "92002bd308c4b658bffcb472d69575f5f48175978e4391e84df31afc9e2dd9f8",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "build_commands": [
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O0 --coverage -I{repo}/vendor/liblinear {repo}/tests/fixtures/mcsvm_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {repo}/target/mcsvm-reference/reference_O0",
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O2 -I{repo}/vendor/liblinear {repo}/tests/fixtures/mcsvm_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {repo}/target/mcsvm-reference/reference_O2"
+  ],
+  "output_sha256": "952f447d914ab6e3fb931b3c7e5dd0fffe458467f62631efee266b6f52981964",
+  "raw_output_sha256": {
+    "singleton": "407f38ae0fa8de598c3ee707671011133d16ec917ae6bfa3d8b258946ba42f60",
+    "four_classes": "ef09a8f41a624d35525b7e46ece2664204185a1acab6909452068874669452c1",
+    "five_unbalanced": "5117db5441290f21579e31dbd084d690a4370d0cae9b2b28867c86053a2feb70",
+    "duplicate": "5b9af6e452c4ea9635d8c7ab880f900d5b730c95fc7c6dd046a0037fbff736fa",
+    "zero_column_C_small": "d363fcb8a3e72ea004bb8f171fed0b97c39b2ece245c8cbb6123f3ab80c79350",
+    "C_large": "573094cb415a8fb9e54d00911b1c0b4f9b1c7836bbdcecd89d9fc428f46a64b7"
+  },
+  "spread": "All six O0 and O2 outputs are equal by bytes.",
+  "coverage_command": "gcov -j -b {repo}/target/mcsvm-reference/reference_O0-linear.gcno",
+  "coverage": {
+    "corpus": {
+      "753": 9337,
+      "767": 557,
+      "774": 9194,
+      "825": 85,
+      "839": 0
+    },
+    "extra": {
+      "singleton": {
+        "753": 27,
+        "767": 0,
+        "774": 0,
+        "825": 7,
+        "839": 0
+      },
+      "four_classes": {
+        "753": 63,
+        "767": 20,
+        "774": 0,
+        "825": 10,
+        "839": 0
+      },
+      "five_unbalanced": {
+        "753": 125,
+        "767": 163,
+        "774": 36,
+        "825": 8,
+        "839": 0
+      },
+      "duplicate": {
+        "753": 42,
+        "767": 16,
+        "774": 17,
+        "825": 8,
+        "839": 0
+      },
+      "zero_column_C_small": {
+        "753": 169,
+        "767": 47,
+        "774": 48,
+        "825": 27,
+        "839": 0
+      },
+      "C_large": {
+        "753": 445,
+        "767": 647,
+        "774": 78,
+        "825": 38,
+        "839": 1
+      }
+    }
+  }
+}

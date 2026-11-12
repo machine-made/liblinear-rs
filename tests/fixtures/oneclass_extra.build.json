@@ -1,0 +1,164 @@
+{
+  "source_hashes": {
+    "tests/fixtures/oneclass_reference.cpp": "b513b0df19b55edacdb388bb2c1f027f01b02dd7a77b3ecff420663660bd3b74",
+    "reference/driver/ref_driver.cpp": "353741f31afaac65f466072bd8b157b3f57d5dd4b24b1515abe4e13dcc0a4d50",
+    "vendor/liblinear/linear.cpp": "92002bd308c4b658bffcb472d69575f5f48175978e4391e84df31afc9e2dd9f8",
+    "vendor/liblinear/linear.h": "2f5450c2a26d3e73e12c468041e7eb3d3afc821c37b269138d94e8b72af3e526",
+    "vendor/liblinear/newton.cpp": "cd3880508fd6c36f6ffb0e6c0b2600a5fab4f10530519cf139cea926e8716d0c",
+    "vendor/liblinear/newton.h": "d5b2f3bf30131879b1e8b386fdac1a8dd7ec1ce27c877ea10651dfc9d89db91d",
+    "vendor/liblinear/blas/daxpy.c": "d9594a126f423e0112ff1093ccf4d3a63c01adfeca0ed029dae3b081e31a1ea1",
+    "vendor/liblinear/blas/ddot.c": "1600dee968017f0106726fd0d7575ba1f1b22ac358e8c29047543fa04e69e275",
+    "vendor/liblinear/blas/dnrm2.c": "07071fddc23a704d09da79e7b3ac9807ce932f55260e91a82cd6964d1863d1b9",
+    "vendor/liblinear/blas/dscal.c": "09b386c6aa01c81db8b44db164f7bbb66f6326e992a65a53d8cd8a2e4735259e"
+  },
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "build_commands": [
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O0 --coverage -I{repo}/vendor/liblinear {repo}/tests/fixtures/oneclass_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {build}/reference_O0",
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O2 -I{repo}/vendor/liblinear {repo}/tests/fixtures/oneclass_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {build}/reference_O2"
+  ],
+  "run_command": "LC_ALL=C {build}/reference_O2 {repo}/tests/fixtures/oneclass_NAME.txt {build}/oneclass_NAME.O2.json 21",
+  "coverage_command": "gcov -j -b {build}/reference_O0-linear.gcno",
+  "coverage_rule": "Delete gcda files before each case. Counts are executions of branch bodies in unchanged linear.cpp.",
+  "coverage_lines": {
+    "restore": 2315,
+    "shrink": 2327,
+    "iteration_limit": 2437,
+    "rho_free": 2470,
+    "rho_bounds": 2472
+  },
+  "output_sha256": "4a0757a1737402e8a883f37afb6d0fa3145fe9366fbb1ede4c52c862e5ad19b6",
+  "raw_output_sha256": {
+    "oneclass_nu_half": "84fe3775f23e874348055f3678e36045effce784710b12185045f483f3724009",
+    "oneclass_nu_high_duplicate": "575f7ae5a7dc42b89577b0b8468bfa673212878375c48e83ee3889c5f8567104",
+    "oneclass_nu_low": "a54fd9959264e95f88a2dcbc15642caf0e2e6a85b8b0552b0535378c0c021636",
+    "oneclass_one_row": "9e072f3f44dfa540122e8a75b7ce27f93fae44fa827f74a7d0ca2803dd7a4b03",
+    "oneclass_scaled": "ad58503dddb83fed543477dcb33f1fac42561baaf47a4706c6a5c20688dbb158",
+    "oneclass_zero_column": "bbde36592118746dcba0eea587cca12af5542f4b2fbeb44226a89fa0f13f1761"
+  },
+  "spread": "All six O0 and O2 outputs are equal by bytes. All 11 corpus O0 outputs equal the frozen O2 bytes.",
+  "coverage": {
+    "corpus": {
+      "s21_C_large": {
+        "2315": 1,
+        "2327": 2,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_C_small": {
+        "2315": 1,
+        "2327": 2,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_bias_off": {
+        "2315": 1,
+        "2327": 2,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_dense": {
+        "2315": 1,
+        "2327": 8,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_duplicate": {
+        "2315": 2,
+        "2327": 5,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_eps_loose": {
+        "2315": 1,
+        "2327": 1,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_eps_tight": {
+        "2315": 1,
+        "2327": 2,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_heart_scale": {
+        "2315": 1,
+        "2327": 266,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_one_row": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_sparse": {
+        "2315": 3,
+        "2327": 814,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "s21_zero_feature": {
+        "2315": 1,
+        "2327": 2,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      }
+    },
+    "extra": {
+      "oneclass_nu_half": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 0,
+        "2470": 0,
+        "2472": 1
+      },
+      "oneclass_nu_high_duplicate": {
+        "2315": 1,
+        "2327": 4,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "oneclass_nu_low": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "oneclass_one_row": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      },
+      "oneclass_scaled": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 1,
+        "2470": 1,
+        "2472": 0
+      },
+      "oneclass_zero_column": {
+        "2315": 0,
+        "2327": 0,
+        "2437": 0,
+        "2470": 1,
+        "2472": 0
+      }
+    }
+  }
+}

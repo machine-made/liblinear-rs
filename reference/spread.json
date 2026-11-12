@@ -1,0 +1,8098 @@
+{
+  "builds": [
+    "O0",
+    "O2"
+  ],
+  "cases": 158,
+  "relative_difference": "abs(O2 - O0) / max(abs(O0), abs(O2)); zero if both are zero",
+  "outputs": {
+    "runs[].solver": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].C": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].eps": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].bias": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].nr_class": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].nr_feature": {
+      "count": 159,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].labels[]": {
+      "count": 215,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].weights[]": {
+      "count": 4757,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].decision_values[][]": {
+      "count": 13611,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].predictions[]": {
+      "count": 12406,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    },
+    "runs[].rho": {
+      "count": 11,
+      "max_absolute": 0.0,
+      "max_relative": 0.0
+    }
+  },
+  "per_case": {
+    "analytic_l2svc": {
+      "runs[].solver": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_free_bias": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s00_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s01_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_free_bias": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s02_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s03_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 8,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 40,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 400,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 14,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 26,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 540,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 600,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1000,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_three_class": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 9,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 90,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s04_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 8,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 12,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_free_bias": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s05_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_free_bias": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s06_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_class_weight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s07_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].labels[]": {
+        "count": 2,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_free_bias": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s11_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s12_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_bias_on": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s13_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_C_large": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_C_small": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_bias_off": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_dense": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 20,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 200,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_duplicate": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 7,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_eps_loose": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_eps_tight": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_heart_scale": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 13,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 270,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_one_row": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 3,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_sparse": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 300,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 500,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    },
+    "s21_zero_feature": {
+      "runs[].solver": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].C": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].eps": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].bias": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_class": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].nr_feature": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].rho": {
+        "count": 1,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].weights[]": {
+        "count": 4,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].decision_values[][]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      },
+      "runs[].predictions[]": {
+        "count": 6,
+        "max_absolute": 0.0,
+        "max_relative": 0.0
+      }
+    }
+  }
+}

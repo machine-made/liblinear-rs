@@ -1,0 +1,1 @@
+{"runs":[{"solver":13,"C":1,"eps":0.01,"bias":-1,"nr_class":2,"nr_feature":3,"rho":null,"labels":null,"weights":[0.85271317829457349,0.42635658914728675,-0.1705426356589147],"decision_values":[[1.0999999999999999]],"predictions":[1.0999999999999999]}]}

@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[package]
+name = "liblinear-fuzz"
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.99.1"
+publish = false
+license = "BSD-3-Clause"
+description = "Fuzz targets for the case reader, training and prediction"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+liblinear = { path = ".." }
+# The fuzzer passes each input as a byte slice.
+libfuzzer-sys = "0.4"
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "read_problem"
+path = "fuzz_targets/read_problem.rs"
+
+[[bin]]
+name = "train"
+path = "fuzz_targets/train.rs"
+
+[[bin]]
+name = "predict"
+path = "fuzz_targets/predict.rs"

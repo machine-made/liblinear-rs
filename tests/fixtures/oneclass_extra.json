@@ -1,0 +1,277 @@
+{
+  "problems": [
+    {
+      "name": "nu_half",
+      "input_sha256": "3e8b2cc3ee278a90e45cb2857369c4684ce84491e38de311d3a3f0d79f8bec0f",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-08,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 2,
+          "rho": 15,
+          "labels": null,
+          "weights": [
+            3,
+            6
+          ],
+          "decision_values": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "predictions": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nu_high_duplicate",
+      "input_sha256": "886ff0f7a7b0dc31e7a552ba56b3f79c7c99cb74a1b8e928630c69fc33e3b2ba",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-08,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 2,
+          "rho": 2.2749999999999995,
+          "labels": null,
+          "weights": [
+            -0.45499999999999985,
+            1.3649999999999998
+          ],
+          "decision_values": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              -3.8674999999999993
+            ],
+            [
+              -3.366999999999999
+            ],
+            [
+              -4.549999999999999
+            ],
+            [
+              -1.9109999999999996
+            ],
+            [
+              0
+            ]
+          ],
+          "predictions": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nu_low",
+      "input_sha256": "36914bfa50f16ae9e611c383b65bb568023f9dcf0bb21d05c9c782b357814526",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-08,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 2,
+          "rho": 0,
+          "labels": null,
+          "weights": [
+            0,
+            0
+          ],
+          "decision_values": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "predictions": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "one_row",
+      "input_sha256": "88add2004a4ac40042466df3eb8afa9644348b807cd540aaa7bed5d9973a0e31",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-08,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 2,
+          "rho": 2.5,
+          "labels": null,
+          "weights": [
+            0.5,
+            1
+          ],
+          "decision_values": [
+            [
+              0
+            ]
+          ],
+          "predictions": [
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "scaled",
+      "input_sha256": "e1d4b4616ea4058af3a86c97a8a3ee886b29cedcbc513a604897f88172d5cabc",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-16,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 2,
+          "rho": 9.259260025373806e-12,
+          "labels": null,
+          "weights": [
+            5.995204332975845e-14,
+            -1.9095836023552692e-14
+          ],
+          "decision_values": [
+            [
+              1.2501111257279263e-11
+            ],
+            [
+              -1.482591827084434e-10
+            ],
+            [
+              3.9812597663058114e-11
+            ],
+            [
+              1.6677770275919102e-10
+            ],
+            [
+              -3.1019631308026874e-11
+            ],
+            [
+              -8.992806499463768e-12
+            ]
+          ],
+          "predictions": [
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "name": "zero_column",
+      "input_sha256": "1c3c000c046e1f24350cc253552ed5976dbf2b5a94c2f364769439f7e5e9234c",
+      "runs": [
+        {
+          "solver": 21,
+          "C": 1,
+          "eps": 1e-08,
+          "bias": -1,
+          "nr_class": 2,
+          "nr_feature": 3,
+          "rho": 5.911797299470518e-10,
+          "labels": null,
+          "weights": [
+            2.7820218351237713e-10,
+            1.7387639468965254e-09,
+            0
+          ],
+          "decision_values": [
+            [
+              3.164550347358376e-09
+            ],
+            [
+              5.911798499247193e-10
+            ],
+            [
+              -2.1908425850873884e-09
+            ],
+            [
+              5.911796099693847e-10
+            ],
+            [
+              -4.34690980725248e-09
+            ],
+            [
+              -4.1730327526856466e-11
+            ]
+          ],
+          "predictions": [
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "case_count": 13,
+  "cases": [
+    {
+      "candidate_sha256": "d95e54ca286a4d4c8f439659d4ed008dab32c7082bb4a6a4054a4a0ba71ffc27",
+      "case": "s07_C_large",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_C_large.txt",
+          "sha256": "22f3946d7df035ab2038fcbf6f76a4262568f9a2c0c6f0f9dd891065b21b40be"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_C_large.json",
+          "sha256": "8dafeee1d24ab0c37252fcf07eb282de4fea3bdb92313e547713dc8a98c2cdc7"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "1d188a9b3cb5783b2824ac10fbac78cb3e7564536c82ee3c16b0e81fbea57520",
+      "case": "s07_C_small",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_C_small.txt",
+          "sha256": "372f56e1b980cc249dbf3afa0a700f73ce34f6cba20bd348680b90bfde9202b9"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_C_small.json",
+          "sha256": "8727a225a7d15882a8ed9cfac3061df82bc960b5bc7bf9d5c9ed739c53633bcc"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "be4f0bbe5d6f4f6a1656b21d2a2e4dd86b48c5cb395fa3ce94ce4911b45dc8ae",
+      "case": "s07_bias_off",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_bias_off.txt",
+          "sha256": "e119fa0137180f6a5cc5e3f7ee7f7d01b3e0c61217b3f3e338c3e548e2cc874c"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_bias_off.json",
+          "sha256": "42d516f1e02deb7e16a3f7d7329bfaf84f09635c1a7a9b164e29d647078d1f01"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "2329f136777493d59536e3a36dcc1af70a5b8bab47425f4bb2bd51e6663317c4",
+      "case": "s07_bias_on",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_bias_on.txt",
+          "sha256": "a641b4a38851ba30841f0069b5c4359b657aa7f6d918451007268d18992cfb3e"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_bias_on.json",
+          "sha256": "d1f5fdc28e74e16a29294b315cee500daae385aa10f82b058b32a8ece16092ac"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 24
+    },
+    {
+      "candidate_sha256": "c88553bda45914449114233ea6824be7ad6b5703e03acef8b95ded865381318b",
+      "case": "s07_class_weight",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_class_weight.txt",
+          "sha256": "31cee2de79bdf815236bb97218f5a064ed00b765954495bc7167a4e4f9d2d5d8"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_class_weight.json",
+          "sha256": "dc95734d9fe0a040d873e9e25d00fd8e48c768b0b4b471ead579836787105362"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "16dfee278a5d1c10421837a12d7bb122b9afd751782b4ab7e5c0bb39aa360df1",
+      "case": "s07_dense",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_dense.txt",
+          "sha256": "28cb4758c8c6811bf840c19b93c45bd9a5958a1741ddb4dc1f40049407d4284e"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_dense.json",
+          "sha256": "de42b370ed9b21b11ed4155dcf68c320793106a2b569526f2420a6774077d680"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 428
+    },
+    {
+      "candidate_sha256": "e4699162808879add8638a4945a15f40afae55b6dd461a05bb09e036c4d2f5c1",
+      "case": "s07_duplicate",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_duplicate.txt",
+          "sha256": "8656100c3ff2f44e9a7626f8822a5857be6667003c4b39e220ca4d18ac62388d"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_duplicate.json",
+          "sha256": "a2f0076142e17a6aef2ff6013c9f28a5170396cbc056f309dc7ed72f01390950"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 25
+    },
+    {
+      "candidate_sha256": "ec2d71752bf865229b91c5ed9ed59c3f1d4d2a7b1ad1577f87df9595204fcbf0",
+      "case": "s07_eps_loose",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_eps_loose.txt",
+          "sha256": "ae146cc127cd907cce4b63eb6478f22bf31a6386eb770df626c3802e6ca28ab7"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_eps_loose.json",
+          "sha256": "b04df520b6fd926c5795cfe4a5d4eba23e661a46ec43622fb48050c3bb4af169"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "b78f1e14ec12467f50ec326abfbd63f042808b2574bed7201bd06e14073afa7a",
+      "case": "s07_eps_tight",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_eps_tight.txt",
+          "sha256": "b9e67b0081d070411387fc86a657edc403b46a3985be3b131674d3419a759a11"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_eps_tight.json",
+          "sha256": "727c23410e067e97912a7f7cbe2b715c41d23b9bf08351d247562489a2194b2f"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "cde738bc5a964fbbe429d15d9dd1ec8d189d1658720a7996ac9db3a508dd4160",
+      "case": "s07_heart_scale",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_heart_scale.txt",
+          "sha256": "5ce25d406953160e0d8639028560c1660a22909ca0df00e858fc64e1c7da5bad"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_heart_scale.json",
+          "sha256": "dc589a54446a06fee136638a932fd0748ed337c843c3573c439d73e92a5697bd"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 561
+    },
+    {
+      "candidate_sha256": "c0f6cd8478f13b7bd748ab298045e74a9021843651d7c263bfc846c7bfac75bc",
+      "case": "s07_one_row",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_one_row.txt",
+          "sha256": "564c18006fb98339c4982a51890cc6d91081f760a4eec83986ed16711a83dbd3"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_one_row.json",
+          "sha256": "18298e7a3ab57b3bdd8716067f0cdd6cf57549c00a1f545cc95cc8be05ebb6ed"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 12
+    },
+    {
+      "candidate_sha256": "a6c76d103d4ea903535bb79608799cab226a4c51d757354fc03a3011c63dc0a9",
+      "case": "s07_sparse",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_sparse.txt",
+          "sha256": "24ad4d350a7da33558efc3911cf846e96a89d99783b0668c5ca96b3583b3a024"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_sparse.json",
+          "sha256": "3a53083f34d21b0398db83e307407d4232e8de62d6c42a96a05564ac994f6ae2"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 1308
+    },
+    {
+      "candidate_sha256": "0fc035cd5447129f95d1a6692313d704e492835f85157104cbee03c4aca6edde",
+      "case": "s07_zero_feature",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s07_zero_feature.txt",
+          "sha256": "2e14d8412847978f7a457d02603006862d6c2770e5ed427ae92946a139afbe5b"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s07_zero_feature.json",
+          "sha256": "fa30198080e5c7b5e6a18844c7f7ce241b588dddb4c7c3d2892f9f3d7066621a"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 24
+    }
+  ],
+  "outputs": {
+    "runs[].C": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].bias": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].decision_values[][]": {
+      "count": 1026,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].eps": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].labels[]": {
+      "count": 25,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].nr_class": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].nr_feature": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].predictions[]": {
+      "count": 1026,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].solver": {
+      "count": 13,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].weights[]": {
+      "count": 365,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    }
+  },
+  "solver": 7,
+  "status": "pass",
+  "tolerances": {
+    "path": "reference/tolerances.json",
+    "sha256": "1d63cb5d458a0dbf0ffad0f10099ca8606731a9afafe29b2057adbec49e1720a"
+  },
+  "worst_ulp": 0
+}

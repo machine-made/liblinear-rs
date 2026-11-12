@@ -1,0 +1,384 @@
+{
+  "case_count": 15,
+  "cases": [
+    {
+      "candidate_sha256": "7da3d2dd0812858b6d3fa1ed02b00335712ecddef6be2aab974f1cad3a7fd0ad",
+      "case": "analytic_l2svc",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/analytic_l2svc.txt",
+          "sha256": "124e2093789a327b4607a5b4eea6d76cbcb37c40b1f991b38f5b202df1ca030b"
+        },
+        "reference": {
+          "path": "reference/golden/O2/analytic_l2svc.json",
+          "sha256": "d4d0c7858e015a15879aa819227a39daee26e9ec36fd98cc72849f3000e19ec3"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 13
+    },
+    {
+      "candidate_sha256": "7d2bd8007213053accf1c5705e9df6e69a42fbdcbe36bd73ba0a55c0c1c6df67",
+      "case": "s02_C_large",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_C_large.txt",
+          "sha256": "29ab4c3b5e0a8c0e7552b84c0510f646cb6695df2355806d3c44256ccaf82e53"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_C_large.json",
+          "sha256": "0f303daf43fa6857446a9634b48413ffc2835ba437d6e6febabf1e787b3779b7"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "6260d3d9881f63297900e42a9f1726dd4e315383b215f5dc630467ade32348fc",
+      "case": "s02_C_small",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_C_small.txt",
+          "sha256": "ba139e4f977db7ae36f682436291a2c5e188a68266ea149711cb3f9ddd4dfe9d"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_C_small.json",
+          "sha256": "0b6e9dbaf606536b677a57dc0d8c5f6614a37670824ebc30a18570e53e3a4021"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "c5df3d723a3edf878209a3873bbaa9dc2ce6d874b3e281dbccf69d2c58154476",
+      "case": "s02_bias_off",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_bias_off.txt",
+          "sha256": "af588230d1f6d5096fbf8e08b65b5af4ccf85bd8111b0fabb33767d41831eb8c"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_bias_off.json",
+          "sha256": "975d9278a728e856db7f72cce25ab58a64e85980e17fc65a0a3abb367ed227e9"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "048905a99889045a4cf8e4613fb6f56cbb1e5083ab055abd7d3cec4726d6bd2c",
+      "case": "s02_bias_on",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_bias_on.txt",
+          "sha256": "e490ecbb4a78d6e1c840ab110d658deb7ea8ee9cf377b5e2d4b2fb82b414de3b"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_bias_on.json",
+          "sha256": "34165636b7fbf8009339839c5a0c2b3d6529264fb94dee4c5ad42ea28fe83b2f"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 24
+    },
+    {
+      "candidate_sha256": "68744147782f49d938b57fb8c27f5329a909252c32841c5c19fedf4726cf9b12",
+      "case": "s02_class_weight",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_class_weight.txt",
+          "sha256": "da3bdf769344c8c41ac601ab0b0f407786605d947bfb056bea29a157069078ac"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_class_weight.json",
+          "sha256": "988e089545a2dfdb12b44eda5296eb86d3af99158687e8dd66662ef16bef25f2"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "72e657faabcb5d09b696e0c4b7093ccc779fb5088dc430aaa2996c2c4e08658f",
+      "case": "s02_dense",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_dense.txt",
+          "sha256": "1a21cd2afa0ca33830f463d5f073bbb921aa6181f2fb68f11aa21097ab379101"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_dense.json",
+          "sha256": "65bbf6e2c40a09f14536984d2f29c15611f0ad1a90b66033a05c09679e285cc5"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 428
+    },
+    {
+      "candidate_sha256": "16619e85950ab7ebe4c38b3bab1763553e60f97f1b3040b70c8f8e6f71354717",
+      "case": "s02_duplicate",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_duplicate.txt",
+          "sha256": "423f031c9e6d30b91ec3155c2179413588ee94da1061c9b30163abc55b18c6f5"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_duplicate.json",
+          "sha256": "7660cbd1e5c5b51fd1e81fe54cbf5042b1fe5b3396a8c534bfb6536f5927de55"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 25
+    },
+    {
+      "candidate_sha256": "5edfd37c467a316bf2227e57a961e455a8a1fa3a572641bee72377322c2b0363",
+      "case": "s02_eps_loose",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_eps_loose.txt",
+          "sha256": "4337beee0a0500e5f63adb31bc3339ea546a252e64b39270d44ad0e8c2a37d26"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_eps_loose.json",
+          "sha256": "7a3a273557f144924ace5fee605e08384bbef401b71d9bbb5b52eebc5139ace1"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "8c15e5d54bcc6302125aa0c154df4f62f73f490da744f63209c63dd5301fff6e",
+      "case": "s02_eps_tight",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_eps_tight.txt",
+          "sha256": "9bcb02f5c6cbb5f088297722a6de4ead1d8eec09dc9e73e4477ecf4aa230859f"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_eps_tight.json",
+          "sha256": "63dd1944a87aeaa0ee17c795acd4114c45d6813c328a24b8a13d473268c71b9f"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 23
+    },
+    {
+      "candidate_sha256": "c014ab10e687a0bbd91c55925948b2c152d08e2925bd38844866b2833db74ae0",
+      "case": "s02_free_bias",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_free_bias.txt",
+          "sha256": "2307a08f32dc0bf9f7f1a26c8b07700b133deafd2e0f16c16baf0e32583ba267"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_free_bias.json",
+          "sha256": "aa6d278f01cfbd11a14dd95f4571c8593449aa0b5a5e42e00a611626f1395d22"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 24
+    },
+    {
+      "candidate_sha256": "02a10560edfaf3d63657415c297de30a383d965e589e04195c033004641a60a5",
+      "case": "s02_heart_scale",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_heart_scale.txt",
+          "sha256": "35b026e94e76466d5547c95644da1c1b03c6bde96c0767503b4392052033ed4f"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_heart_scale.json",
+          "sha256": "9b87d1cdfc7f52762bc381bf4a157aa3f83c020cf3944b28010abc6ae6820b71"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 561
+    },
+    {
+      "candidate_sha256": "654de42353b576591ccc116f2c8ac3b462868dcb87918911966846802aa731be",
+      "case": "s02_one_row",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_one_row.txt",
+          "sha256": "13f1e58012f6a5a47e68f45e9fda1d9426686806ce3ad09c91a4dcfa666d11d9"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_one_row.json",
+          "sha256": "2f467396e3a64b89fe6555ef8f40f0337ec17b22753771fa86be9dc142364ab6"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 12
+    },
+    {
+      "candidate_sha256": "5ae0a6fcab39118b55867520be8ddf750bfc73b78d9f89a36187494dade2596a",
+      "case": "s02_sparse",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_sparse.txt",
+          "sha256": "0fd6ab8b4032487c82badcd76473936120fa1f70579225491a974a8c3eae1f79"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_sparse.json",
+          "sha256": "bab1d089d423673ab355bd8e2601317f77d6ce624979b1fe5ca8a12388b8a626"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 1308
+    },
+    {
+      "candidate_sha256": "0862efb8248b5ba68d7aba57d0afdcab0e70ad41bcc6008c93ad471dcfe38563",
+      "case": "s02_zero_feature",
+      "failures": 0,
+      "inputs": {
+        "corpus": {
+          "path": "reference/corpus/s02_zero_feature.txt",
+          "sha256": "01024c7d9ea685eba47ce58095f4b051f33d75bc43a246ca155a5d3d43c57d1e"
+        },
+        "reference": {
+          "path": "reference/golden/O2/s02_zero_feature.json",
+          "sha256": "e4d04dfc9d205f841fe7eb8a1c5325da1826fda1a090d975620255b2898fc9b4"
+        }
+      },
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0,
+      "status": "pass",
+      "values": 24
+    }
+  ],
+  "outputs": {
+    "runs[].C": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].bias": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].decision_values[][]": {
+      "count": 1034,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].eps": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].labels[]": {
+      "count": 29,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].nr_class": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].nr_feature": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].predictions[]": {
+      "count": 1034,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].solver": {
+      "count": 15,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    },
+    "runs[].weights[]": {
+      "count": 370,
+      "failures": 0,
+      "max_absolute": 0.0,
+      "max_relative": 0.0,
+      "max_ulp": 0
+    }
+  },
+  "solver": 2,
+  "status": "pass",
+  "tolerances": {
+    "path": "reference/tolerances.json",
+    "sha256": "1d63cb5d458a0dbf0ffad0f10099ca8606731a9afafe29b2057adbec49e1720a"
+  },
+  "worst_ulp": 0
+}

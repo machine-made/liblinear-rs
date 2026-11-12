@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# The workflow sets the per-mutant timeout. This file has no absolute timeout key.
+test_tool = "nextest"
+additional_cargo_args = ["--locked"]

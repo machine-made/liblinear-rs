@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: BSD-3-Clause
+[toolchain]
+channel = "stable"
+components = ["rustfmt", "clippy"]

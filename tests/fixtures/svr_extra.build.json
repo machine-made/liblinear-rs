@@ -1,0 +1,216 @@
+{
+  "source_hashes": {
+    "tests/fixtures/svr_reference.cpp": "9b560ac03274df07149ccc5a4fed3520c211f27a4dd9bce96d2ff915ea97f4af",
+    "vendor/liblinear/linear.cpp": "92002bd308c4b658bffcb472d69575f5f48175978e4391e84df31afc9e2dd9f8",
+    "vendor/liblinear/newton.cpp": "cd3880508fd6c36f6ffb0e6c0b2600a5fab4f10530519cf139cea926e8716d0c",
+    "vendor/liblinear/blas/daxpy.c": "d9594a126f423e0112ff1093ccf4d3a63c01adfeca0ed029dae3b081e31a1ea1",
+    "vendor/liblinear/blas/ddot.c": "1600dee968017f0106726fd0d7575ba1f1b22ac358e8c29047543fa04e69e275",
+    "vendor/liblinear/blas/dnrm2.c": "07071fddc23a704d09da79e7b3ac9807ce932f55260e91a82cd6964d1863d1b9",
+    "vendor/liblinear/blas/dscal.c": "09b386c6aa01c81db8b44db164f7bbb66f6326e992a65a53d8cd8a2e4735259e",
+    "reference/driver/ref_driver.cpp": "353741f31afaac65f466072bd8b157b3f57d5dd4b24b1515abe4e13dcc0a4d50"
+  },
+  "source_sha256": "9b560ac03274df07149ccc5a4fed3520c211f27a4dd9bce96d2ff915ea97f4af",
+  "coverage_source_sha256": "92002bd308c4b658bffcb472d69575f5f48175978e4391e84df31afc9e2dd9f8",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "build_commands": [
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O0 --coverage -I{repo}/vendor/liblinear {repo}/tests/fixtures/svr_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {repo}/target/svr-reference/reference_O0",
+    "RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 g++ -std=c++11 -O2 -I{repo}/vendor/liblinear {repo}/tests/fixtures/svr_reference.cpp {repo}/vendor/liblinear/linear.cpp {repo}/vendor/liblinear/newton.cpp {repo}/vendor/liblinear/blas/daxpy.c {repo}/vendor/liblinear/blas/ddot.c {repo}/vendor/liblinear/blas/dnrm2.c {repo}/vendor/liblinear/blas/dscal.c -o {repo}/target/svr-reference/reference_O2"
+  ],
+  "output_sha256": "975d0090485dc8c5de373707e460faed024c27d85495831c038538dc6abe0b9c",
+  "raw_output_sha256": {
+    "equal_targets": "76cf4103bf84319409acc78a848d6509a99f3480536b3eef7bf90a5f3af6e24a",
+    "outlier": "357acb6786899badad444541f46346abd788b07fbda76076035ea825dc7cb470",
+    "p_zero": "0e5a2c2c2a7ef64245e97c138f0ba1b836e8c202376d5fe8a6d83900b2c71697",
+    "p_large": "234f31ded6631359692dd0e406a825aba90663fdc720a8f4150f39bfe64a092f",
+    "duplicate_C_small": "a4bb13f4dccf9121f1ea01977be587879c430ed72982da695a5dcf22ad36968b",
+    "zero_column_C_large": "c6369f400b2c618ed0aeae37d4645eb9843113ce51289af31ffa85e192b7b481"
+  },
+  "spread": "All six O0 and O2 outputs are equal by bytes.",
+  "coverage_command": "gcov -j -b {repo}/target/svr-reference/reference_O0-linear.gcno",
+  "coverage": {
+    "corpus": {
+      "11": {
+        "1200": 0,
+        "1212": 0,
+        "1224": 0,
+        "1269": 0,
+        "2742": 0,
+        "2751": 0
+      },
+      "12": {
+        "1200": 178,
+        "1212": 0,
+        "1224": 0,
+        "1269": 4,
+        "2742": 0,
+        "2751": 1
+      },
+      "13": {
+        "1200": 394,
+        "1212": 189,
+        "1224": 165,
+        "1269": 13,
+        "2742": 1,
+        "2751": 0
+      }
+    },
+    "extra": {
+      "equal_targets": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "13": {
+          "1200": 1,
+          "1212": 0,
+          "1224": 0,
+          "1269": 1,
+          "2742": 0,
+          "2751": 0
+        }
+      },
+      "outlier": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 2,
+          "1212": 0,
+          "1224": 0,
+          "1269": 1,
+          "2742": 0,
+          "2751": 0
+        },
+        "13": {
+          "1200": 6,
+          "1212": 1,
+          "1224": 0,
+          "1269": 1,
+          "2742": 0,
+          "2751": 0
+        }
+      },
+      "p_zero": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "13": {
+          "1200": 0,
+          "1212": 4,
+          "1224": 6,
+          "1269": 1,
+          "2742": 0,
+          "2751": 0
+        }
+      },
+      "p_large": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "13": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        }
+      },
+      "duplicate_C_small": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "13": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        }
+      },
+      "zero_column_C_large": {
+        "11": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 0
+        },
+        "12": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 0,
+          "2751": 1
+        },
+        "13": {
+          "1200": 0,
+          "1212": 0,
+          "1224": 0,
+          "1269": 0,
+          "2742": 1,
+          "2751": 0
+        }
+      }
+    }
+  }
+}

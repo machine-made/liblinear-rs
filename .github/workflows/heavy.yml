@@ -1,0 +1,125 @@
+# SPDX-License-Identifier: BSD-3-Clause
+name: Heavy
+
+on:
+  workflow_dispatch:
+    inputs:
+      fuzz_seconds:
+        description: Seconds each fuzz target runs
+        type: number
+        default: 300
+      mutants:
+        description: Run the mutation shards
+        type: boolean
+        default: false
+      mutants_shard:
+        description: One shard number from 0 to 7, or all
+        type: string
+        default: all
+
+permissions:
+  contents: read
+
+env:
+  RAYON_NUM_THREADS: 2
+  CARGO_BUILD_JOBS: 2
+  PYTHONDONTWRITEBYTECODE: 1
+  # This crate requires Rust 1.99.1. The nightly must be at least that compiler.
+  FUZZ_TOOLCHAIN: nightly-2026-11-09
+  MIRI_TOOLCHAIN: nightly-2026-11-09
+
+jobs:
+  fuzz:
+    if: inputs.fuzz_seconds > 0
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [read_problem, train, predict]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8
+        with:
+          toolchain: ${{ env.FUZZ_TOOLCHAIN }}
+      - name: Install cargo-fuzz
+        run: cargo install cargo-fuzz --locked
+      # cargo-fuzz reads the fuzz directory from the crate root.
+      - name: Fuzz target
+        env:
+          FUZZ_TARGET: ${{ matrix.target }}
+          MAX_TIME: ${{ inputs.fuzz_seconds }}
+        run: cargo +"$FUZZ_TOOLCHAIN" fuzz run "$FUZZ_TARGET" -- -max_total_time="$MAX_TIME"
+      - name: Upload crash artifacts
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: fuzz-crash-${{ matrix.target }}
+          path: fuzz/artifacts/
+          if-no-files-found: ignore
+  kani:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # Kani 0.68.0 builds with nightly-2026-08-21 (rustc 1.100.0-nightly),
+      # which meets the crate's rust-version.
+      - uses: model-checking/kani-github-action@f838096619a707b0f6b2118cf435eaccfa33e51f # v1.1
+        with:
+          kani-version: "0.68.0"
+          command: cargo-kani
+          args: --output-format=terse
+  miri:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8
+        with:
+          toolchain: ${{ env.MIRI_TOOLCHAIN }}
+          components: miri
+      # The determinism test builds its rows in memory.
+      # The random and BLAS tests embed their tables at compile time.
+      # No test reads a file, so Miri isolation stays on.
+      - name: Run Miri on the determinism test and the random and BLAS tests
+        env:
+          # Miri adds random error to exp and log on purpose. The logistic
+          # solvers call them, so the thread bit test needs exact floats.
+          MIRIFLAGS: -Zmiri-deterministic-floats
+        run: |
+          cargo +"$MIRI_TOOLCHAIN" miri setup
+          cargo +"$MIRI_TOOLCHAIN" miri test --locked --test determinism
+          cargo +"$MIRI_TOOLCHAIN" miri test --locked --lib rand_checks
+          cargo +"$MIRI_TOOLCHAIN" miri test --locked --lib blas_checks
+  mutants:
+    if: inputs.mutants
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # One shard measures the cost before a full run.
+        shard: ${{ fromJSON(inputs.mutants_shard == 'all' && '[0, 1, 2, 3, 4, 5, 6, 7]' || format('[{0}]', inputs.mutants_shard)) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8
+        with:
+          toolchain: stable
+      - name: Install nextest and cargo-mutants
+        run: cargo install --locked cargo-nextest cargo-mutants
+      # The config file has no timeout key. Three hundred seconds bounds one mutant.
+      - name: Mutate one shard
+        env:
+          SHARD: ${{ matrix.shard }}
+        run: cargo mutants --shard "$SHARD/8" --timeout 300
+      - name: Upload mutation output
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: mutants-${{ matrix.shard }}
+          path: mutants.out/
+          if-no-files-found: ignore

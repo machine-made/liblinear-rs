@@ -1,0 +1,14 @@
+{
+  "license": "BSD-3-Clause",
+  "deny_exclude": [
+    "LICENSE*",
+    "NOTICE*",
+    "OFL.txt",
+    "**/licenses/**",
+    "THIRD-PARTY-NOTICES*",
+    "*.csv",
+    "*.tsv",
+    "**/data/**/*.json",
+    "vendor/**"
+  ]
+}

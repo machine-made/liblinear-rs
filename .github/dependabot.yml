@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: BSD-3-Clause
+version: 2
+updates:
+
+  - package-ecosystem: "cargo"
+    directory: "/"
+    open-pull-requests-limit: 5
+    schedule:
+      interval: monthly
+    groups:
+      cargo-updates:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    open-pull-requests-limit: 5
+    schedule:
+      interval: monthly
+    groups:
+      github-actions-updates:
+        patterns:
+          - "*"
