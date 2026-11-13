@@ -149,16 +149,26 @@ The times are not a speed claim: Rust runs in the unoptimized test profile.
 
 The manifest [real_data_manifest.json](../reference/real_data_manifest.json) holds
 the URL and the SHA-256 of each dataset, from the LIBSVM dataset page. The data
-stays in a cache folder outside the repository. Run the steps in this order:
+stays in a cache folder outside the repository. Set `LIBLINEAR_REAL_DATA_CACHE`
+to that folder. If it is unset, the test uses `$HOME/.cache/liblinear-real-data`.
+The script takes the folder as its second argument and stops if the folder, after
+symbolic links are resolved, is inside the repository. Run the steps in this order:
 
 ```sh
-python3 -I scripts/real_data_parity.py fetch ~/.cache/liblinear-real-data
-RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 python3 -I scripts/real_data_parity.py c ~/.cache/liblinear-real-data
+export LIBLINEAR_REAL_DATA_CACHE="$HOME/.cache/liblinear-real-data"
+python3 -I scripts/real_data_parity.py fetch "$LIBLINEAR_REAL_DATA_CACHE"
+RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 python3 -I scripts/real_data_parity.py c "$LIBLINEAR_REAL_DATA_CACHE"
 RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo test --locked --test real_data -- --ignored
-python3 -I scripts/real_data_parity.py repeat ~/.cache/liblinear-real-data
+python3 -I scripts/real_data_parity.py repeat "$LIBLINEAR_REAL_DATA_CACHE"
 ```
 
 `fetch` stops if a hash differs. `repeat` trains every pair with C again and
-requires the same weight text. The test reads `LIBLINEAR_REAL_DATA_CACHE` when
-set. A match on these pairs does not prove a match on other data or on another
+requires the same weight text. The test is ignored by default and no CI job runs
+it: it needs the network and about 356 MB of data. `reference/MANIFEST.sha256`
+covers the manifest, so a changed dataset list, URL or hash fails
+`scripts/check_reference.py`. The test fails if it compares fewer pairs than the
+manifest lists. `python3 -I scripts/test_real_data_scripts.py` checks the cache
+folder guard, the converter and the hash pinning without any dataset.
+
+A match on these pairs does not prove a match on other data or on another
 C library.
