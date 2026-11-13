@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added a comparison of training time, prediction time and peak memory with LIBLINEAR 2.50 on 20 real dataset and solver pairs
+
 ## 0.0.1
 
 - Added a pure Rust port of LIBLINEAR 2.50 with no C code, no unsafe code and no optional feature

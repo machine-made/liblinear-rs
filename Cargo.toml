@@ -27,6 +27,10 @@ criterion = { version = "0.8", default-features = false, features = ["cargo_benc
 name = "solvers"
 harness = false
 
+[[example]]
+name = "speed_vs_c"
+path = "examples/speed_vs_c.rs"
+
 [[test]]
 name = "golden"
 path = "tests/golden.rs"
