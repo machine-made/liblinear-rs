@@ -2,7 +2,8 @@
 
 `corpus/` holds the inputs. `golden/O0/` and `golden/O2/` hold one JSON file for
 each input. `MANIFEST.sha256` checks all input and result files, the driver,
-`BUILD.md` and `spread.json`. File paths in the manifest start at this folder.
+`BUILD.md`, `spread.json` and `real_data_manifest.json`. File paths in the
+manifest start at this folder.
 The checker also checks the upstream hashes in `vendor/liblinear/PROVENANCE.md`.
 
 ## Input format

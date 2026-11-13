@@ -45,6 +45,7 @@ def saved_files(reference):
         [
             reference / "BUILD.md",
             reference / "spread.json",
+            reference / "real_data_manifest.json",
             reference / "driver/ref_driver.cpp",
         ]
         + list((reference / "corpus").glob("*.txt"))
