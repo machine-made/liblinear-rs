@@ -164,7 +164,7 @@ python3 -I scripts/real_data_parity.py repeat "$LIBLINEAR_REAL_DATA_CACHE"
 
 `fetch` stops if a hash differs. `repeat` trains every pair with C again and
 requires the same weight text. The test is ignored by default and no CI job runs
-it: it needs the network and about 356 MB of data. `reference/MANIFEST.sha256`
+it: it reads the datasets that `fetch` downloads. `reference/MANIFEST.sha256`
 covers the manifest, so a changed dataset list, URL or hash fails
 `scripts/check_reference.py`. The test fails if it compares fewer pairs than the
 manifest lists. `python3 -I scripts/test_real_data_scripts.py` checks the cache
