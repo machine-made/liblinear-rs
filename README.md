@@ -123,7 +123,15 @@ Per-solver counts and the commands to reproduce them are in
   table test before claiming the same result.
 - Nonfinite inputs have no solver result. A `nu` of 1 has no finite one-class
   result.
-- The crate makes no speed claim.
+
+## Measured speed and memory
+
+On 20 dataset and solver pairs, Rust/C ratios range from **0.854 to 1.549**
+for training time and **0.935 to 1.730** for peak resident memory. Lower is
+better. The machine was an AMD Ryzen 9 9900X with Linux on WSL2. Builds used
+rustc 1.99.1 in release mode and g++ 13.3.0 at `-O2`.
+See [docs/PERFORMANCE.md](docs/PERFORMANCE.md) for the method, prediction
+times, rerun checks and memory follow-up items. These are stage A measurements.
 
 ## Build and test
 
