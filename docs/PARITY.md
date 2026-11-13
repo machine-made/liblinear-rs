@@ -132,3 +132,33 @@ rho update fails parity. Run its ignored test alone; exit 101 is expected.
 ```sh
 RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 RUST_TEST_THREADS=1 cargo test --locked --test solver21 changed_rho_matches_reference -- --ignored --exact
 ```
+
+## Real datasets
+
+Twenty pairs of a dataset and a solver match the C `train` program, built at
+`-O2` with the flags of `reference/BUILD.md`, with worst 0 ULP in the weights, `rho`
+and predictions. The datasets are `a9a` (32561 rows, 123 features) and
+`rcv1_train.binary` (20242 rows, 47236 features) with solvers 0, 1, 2, 3, 5, 6 and 7;
+`satimage.scale` (4435 rows, 36 features, six classes) with solvers 4 and 2;
+`cpusmall_scale` (8192 rows, 12 features) with solvers 11, 12 and 13; and `a9a`
+with solver 21. All pairs use C 1, eps 0.01 and bias 1, except solver 21: the
+C library refuses a bias feature there, so that pair has no bias. The report is
+[real_data.json](../reference/parity/real_data.json), with one line for each pair.
+It records the shape, both times, the worst ULP and the SHA-256 of the C weight text.
+The times are not a speed claim: Rust runs in the unoptimized test profile.
+
+The manifest [real_data_manifest.json](../reference/real_data_manifest.json) holds
+the URL and the SHA-256 of each dataset, from the LIBSVM dataset page. The data
+stays in a cache folder outside the repository. Run the steps in this order:
+
+```sh
+python3 -I scripts/real_data_parity.py fetch ~/.cache/liblinear-real-data
+RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 python3 -I scripts/real_data_parity.py c ~/.cache/liblinear-real-data
+RAYON_NUM_THREADS=2 CARGO_BUILD_JOBS=2 cargo test --locked --test real_data -- --ignored
+python3 -I scripts/real_data_parity.py repeat ~/.cache/liblinear-real-data
+```
+
+`fetch` stops if a hash differs. `repeat` trains every pair with C again and
+requires the same weight text. The test reads `LIBLINEAR_REAL_DATA_CACHE` when
+set. A match on these pairs does not prove a match on other data or on another
+C library.

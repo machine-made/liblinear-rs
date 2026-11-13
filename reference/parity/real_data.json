@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "tolerance": "0 ULP: equal bits",
+  "manifest": "reference/real_data_manifest.json",
+  "pair_count": 20,
+  "equal_count": 20,
+  "worst_ulp": 0,
+  "timing_note": "Both times include reading the data file. C seconds cover the whole train process, with the model write. Rust seconds cover read_problem and train, and train also scores the training rows. Rust runs in the unoptimized test profile. Timing is not a speed claim.",
+  "pairs": [
+    {"c_seconds":0.115,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.235,"solver":0,"weights":124,"weights_sha256":"bd42b3f13ae7f3105df92af64c9479d15f088b737783ec046364e1faac8d3f90","worst_ulp":0},
+    {"c_seconds":0.265,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":1.458,"solver":1,"weights":124,"weights_sha256":"7f0cdd3c04ea6a27f927bdb856f9060d9c0f3cf2f74fb227ffaf633e411fc9ff","worst_ulp":0},
+    {"c_seconds":0.114,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.183,"solver":2,"weights":124,"weights_sha256":"ff3518b898b8410d2131b25825ac5421f1f033ce337174e2a9fab71491d019c2","worst_ulp":0},
+    {"c_seconds":0.114,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.477,"solver":3,"weights":124,"weights_sha256":"2a883567e2269e3b2cfbc86ad02f39fd498b12f8c127781fd094001e66093662","worst_ulp":0},
+    {"c_seconds":0.214,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.424,"solver":5,"weights":124,"weights_sha256":"dc965b4c432f6f2593398c3cc0495524d6e70c6c49a97460260dd2e060ac7ca4","worst_ulp":0},
+    {"c_seconds":0.114,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.241,"solver":6,"weights":124,"weights_sha256":"26a98cb618a0d3e18ebae3230ca65bd716f2bea1383879829162ef1861ead0ae","worst_ulp":0},
+    {"c_seconds":0.165,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.413,"solver":7,"weights":124,"weights_sha256":"5fc63031358c3b2a75e7b64d28d7e49404674c880fb48ee38a62247dc9e8a17e","worst_ulp":0},
+    {"c_seconds":0.315,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.236,"solver":0,"weights":47237,"weights_sha256":"98fab30f105c1a060c8bfcb88e922c5b81e94f59f67574301b004fae9e07bcb4","worst_ulp":0},
+    {"c_seconds":0.265,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.062,"solver":1,"weights":47237,"weights_sha256":"ece73b17d99eb5e9d85869d99b4b02043e8badd99ecf027923f2c84480dfb13f","worst_ulp":0},
+    {"c_seconds":0.315,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.16,"solver":2,"weights":47237,"weights_sha256":"b58f2431c98ae9ec1035d32e7261fc9b316e091392d61f7fcec402058748478c","worst_ulp":0},
+    {"c_seconds":0.315,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.387,"solver":3,"weights":47237,"weights_sha256":"ade20a88e75f26fe06d3ebba4bf869c1f871692520d054079fe3bdc9377d18f5","worst_ulp":0},
+    {"c_seconds":0.415,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.265,"solver":5,"weights":47237,"weights_sha256":"1de61f0180d8f1d5c5e1b973e3e6c7b9573f2a9115fe3c95f92b975e4c36c77e","worst_ulp":0},
+    {"c_seconds":0.315,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.185,"solver":6,"weights":47237,"weights_sha256":"7c1ba817ddf467c4fbe0f7a390bd0bcaaea80307d0915a99bda4b52f64531a56","worst_ulp":0},
+    {"c_seconds":0.365,"dataset":"rcv1_train.binary","equal":true,"features":47236,"first_difference":null,"rows":20242,"rust_seconds":1.075,"solver":7,"weights":47237,"weights_sha256":"37bf7b0f29d5ee5b01b1a50918c9ad65c21e0f9aa09c7591104b20ce493e8a76","worst_ulp":0},
+    {"c_seconds":0.114,"dataset":"satimage.scale","equal":true,"features":36,"first_difference":null,"rows":4435,"rust_seconds":1.472,"solver":4,"weights":222,"weights_sha256":"2522aaf6d8cbbc4d9eff043f2705457aa5eedf139a1061681a6aa906bb2aa874","worst_ulp":0},
+    {"c_seconds":0.064,"dataset":"satimage.scale","equal":true,"features":36,"first_difference":null,"rows":4435,"rust_seconds":0.249,"solver":2,"weights":222,"weights_sha256":"1a014da95cab691db3c3b86348ddfd4b309f96b8f9945a02313db8d90e21e25e","worst_ulp":0},
+    {"c_seconds":0.016,"dataset":"cpusmall_scale","equal":true,"features":12,"first_difference":null,"rows":8192,"rust_seconds":0.047,"solver":11,"weights":13,"weights_sha256":"dfc21cf6e4f2d7707542ae51ca3a246c407588fbcc9925bee33ecd3ad0512e88","worst_ulp":0},
+    {"c_seconds":0.064,"dataset":"cpusmall_scale","equal":true,"features":12,"first_difference":null,"rows":8192,"rust_seconds":0.201,"solver":12,"weights":13,"weights_sha256":"7e6b2ae13a2e1b52124bec95fb7ab1312d7f88dcb4dec239be47e544d6e6dd45","worst_ulp":0},
+    {"c_seconds":0.032,"dataset":"cpusmall_scale","equal":true,"features":12,"first_difference":null,"rows":8192,"rust_seconds":0.068,"solver":13,"weights":13,"weights_sha256":"159eee6d3c75554a3b3f922108b03a6d8198c639a33fc7b9e58a5d6a90cf70e0","worst_ulp":0},
+    {"c_seconds":0.064,"dataset":"a9a","equal":true,"features":123,"first_difference":null,"rows":32561,"rust_seconds":0.164,"solver":21,"weights":123,"weights_sha256":"154bfae1c7269ba9f9190514c45e56e9c64c57ff12539bec647a8f3f864ee099","worst_ulp":0}
+  ]
+}

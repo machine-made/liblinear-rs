@@ -43,6 +43,10 @@ path = "tests/libm.rs"
 name = "determinism"
 path = "tests/determinism.rs"
 
+[[test]]
+name = "real_data"
+path = "tests/real_data.rs"
+
 # The fuzz crate links the fuzzer runtime. Keep it out of this build.
 [workspace]
 exclude = ["fuzz"]

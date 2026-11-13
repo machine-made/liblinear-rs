@@ -10,7 +10,9 @@ optional feature.
 
 The port follows the original algorithm and its floating-point operation
 order. On 158 saved test cases, every output field matches the original C
-program bit for bit.
+program bit for bit. On 20 pairs of four real datasets and a solver, up to 32561
+rows and 47236 features, the weights and predictions also match bit for bit on
+Linux with glibc 2.39; see `docs/PARITY.md`.
 
 > **Status.** Version 0.0.1. All 12 solvers train and predict. The crate is
 > not on crates.io yet, and its API can still change. The checks below cover

@@ -1,0 +1,139 @@
+{
+  "source": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/",
+  "parameters": {
+    "C": "1",
+    "eps": "0.01",
+    "bias": "1",
+    "p": "0.1",
+    "nu": "0.5"
+  },
+  "datasets": [
+    {
+      "name": "a9a",
+      "task": "binary",
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a9a",
+      "file": "a9a",
+      "compression": null,
+      "download_sha256": "f5d5ffd8d865ff41328e7ee043e4b020816914ff6843ff15b98905ddbedce906",
+      "text_sha256": "f5d5ffd8d865ff41328e7ee043e4b020816914ff6843ff15b98905ddbedce906",
+      "rows": 32561,
+      "features": 123
+    },
+    {
+      "name": "rcv1_train.binary",
+      "task": "binary",
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/rcv1_train.binary.bz2",
+      "file": "rcv1_train.binary.bz2",
+      "compression": "bz2",
+      "download_sha256": "dda0c6381811484e284e70dd0641335917debce50948346416fde7fb32fad2e2",
+      "text_sha256": "602a02985f2d6b00832603f56c4f41a6b73c04a14197da885f1b2177c2da590d",
+      "rows": 20242,
+      "features": 47236
+    },
+    {
+      "name": "satimage.scale",
+      "task": "multiclass",
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/satimage.scale",
+      "file": "satimage.scale",
+      "compression": null,
+      "download_sha256": "b7150252d3117712588d9d5dfeb1a409234340313a93b458f66449a2678d5542",
+      "text_sha256": "b7150252d3117712588d9d5dfeb1a409234340313a93b458f66449a2678d5542",
+      "rows": 4435,
+      "features": 36
+    },
+    {
+      "name": "cpusmall_scale",
+      "task": "regression",
+      "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/regression/cpusmall_scale",
+      "file": "cpusmall_scale",
+      "compression": null,
+      "download_sha256": "6ac0a79423de80705e0f6709eae7865bf89f792ae4f9d29d476e44b47c315404",
+      "text_sha256": "6ac0a79423de80705e0f6709eae7865bf89f792ae4f9d29d476e44b47c315404",
+      "rows": 8192,
+      "features": 12
+    }
+  ],
+  "pairs": [
+    {
+      "dataset": "a9a",
+      "solver": 0
+    },
+    {
+      "dataset": "a9a",
+      "solver": 1
+    },
+    {
+      "dataset": "a9a",
+      "solver": 2
+    },
+    {
+      "dataset": "a9a",
+      "solver": 3
+    },
+    {
+      "dataset": "a9a",
+      "solver": 5
+    },
+    {
+      "dataset": "a9a",
+      "solver": 6
+    },
+    {
+      "dataset": "a9a",
+      "solver": 7
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 0
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 1
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 2
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 3
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 5
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 6
+    },
+    {
+      "dataset": "rcv1_train.binary",
+      "solver": 7
+    },
+    {
+      "dataset": "satimage.scale",
+      "solver": 4
+    },
+    {
+      "dataset": "satimage.scale",
+      "solver": 2
+    },
+    {
+      "dataset": "cpusmall_scale",
+      "solver": 11
+    },
+    {
+      "dataset": "cpusmall_scale",
+      "solver": 12
+    },
+    {
+      "dataset": "cpusmall_scale",
+      "solver": 13
+    },
+    {
+      "dataset": "a9a",
+      "solver": 21,
+      "bias": "-1"
+    }
+  ]
+}
