@@ -13,6 +13,7 @@
 use liblinear::{SolverType, read_problem, train};
 use serde_json::{Value, json};
 use std::{
+    collections::BTreeSet,
     env, fs,
     path::{Path, PathBuf},
     time::Instant,
@@ -202,13 +203,14 @@ fn every_pair_matches_c() -> Result<(), RunError> {
     let datasets = manifest["datasets"]
         .as_array()
         .ok_or("The manifest has no datasets")?;
+    let pairs = manifest["pairs"]
+        .as_array()
+        .ok_or("The manifest has no pairs")?;
     let mut lines = Vec::new();
     let mut worst = 0_u64;
     let mut differing = Vec::new();
-    for pair in manifest["pairs"]
-        .as_array()
-        .ok_or("The manifest has no pairs")?
-    {
+    let mut used = BTreeSet::new();
+    for pair in pairs {
         let dataset = datasets
             .iter()
             .find(|dataset| dataset["name"] == pair["dataset"])
@@ -225,11 +227,23 @@ fn every_pair_matches_c() -> Result<(), RunError> {
             result["worst_ulp"],
             result["equal"]
         );
+        used.insert(result["dataset"].as_str().unwrap().to_owned());
         worst = worst.max(result["worst_ulp"].as_u64().unwrap());
         if result["equal"] != true {
             differing.push(format!("{} solver {}", result["dataset"], result["solver"]));
         }
         lines.push(format!("    {}", serde_json::to_string(&result)?));
+    }
+    // A run that covers fewer pairs than the manifest lists must fail, not pass.
+    assert!(!pairs.is_empty(), "the manifest lists no pairs");
+    assert_eq!(
+        lines.len(),
+        pairs.len(),
+        "the run compared fewer pairs than the manifest lists"
+    );
+    for dataset in datasets {
+        let name = dataset["name"].as_str().ok_or("A dataset has no name")?;
+        assert!(used.contains(name), "no pair used the dataset {name}");
     }
     let report = format!(
         "{{\n  \"status\": \"{}\",\n  \"tolerance\": \"0 ULP: equal bits\",\n  \"manifest\": \
