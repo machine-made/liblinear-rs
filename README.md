@@ -1,9 +1,8 @@
-# liblinear-rs
+[![CI](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml)
+[![MSRV](https://img.shields.io/badge/MSRV-1.99.1-blue.svg)](Cargo.toml)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](LICENSE)
 
-[![CI](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml)
-[![Licence: BSD-3-Clause](https://img.shields.io/badge/licence-BSD--3--Clause-blue.svg)](LICENSE)
-
-A pure Rust port of [LIBLINEAR](https://www.csie.ntu.edu.tw/~cjlin/liblinear/)
+`liblinear-rs` is a pure Rust port of [LIBLINEAR](https://www.csie.ntu.edu.tw/~cjlin/liblinear/)
 2.50, the library for linear classification, regression and one-class
 detection on large sparse data. There is no C code, no unsafe code and no
 optional feature.
