@@ -337,7 +337,10 @@ def run_all(cache: Path, folder: str) -> None:
     mismatches = 0
     for pair in manifest["pairs"]:
         dataset = datasets[pair["dataset"]]
-        if sha256_file(text_path(cache, dataset)) != dataset.get("text_sha256"):
+        pinned = dataset.get("text_sha256")
+        if pinned is None:
+            raise SystemExit(f"{dataset['name']}: the manifest has no text_sha256")
+        if sha256_file(text_path(cache, dataset)) != pinned:
             raise SystemExit(f"{dataset['name']}: the text file changed since fetch")
         result = run_pair(cache, programs, dataset, pair, manifest["parameters"], folder)
         line = (
