@@ -1,3 +1,5 @@
+![liblinear-rs banner](https://raw.githubusercontent.com/machine-made/liblinear-rs/main/assets/readme-banner-v3.jpg)
+
 [![CI](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/machine-made/liblinear-rs/actions/workflows/ci.yml)
 [![MSRV](https://img.shields.io/badge/MSRV-1.99.1-blue.svg)](Cargo.toml)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](LICENSE)
